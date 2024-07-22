@@ -1,0 +1,32 @@
+# Original Theme By Josean Martinez, Inspired by aura.toml
+# Modified by Tharindu Darshana
+
+# Default colors
+[colors.primary]
+background = '#061930'
+foreground = '#989899'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = "#011423"
+cursor = "#3bd884"
+
+[colors.normal]
+black = "#214969"
+red = "#E52E2E"
+green = "#37d191"
+yellow = "#c9b362"
+blue = "#377add"
+magenta = "#9a76e9"
+cyan = "#3ba6b9"
+white = "#a9d0d3"
+
+[colors.bright]
+black = "#2d5372"
+red = "#ee2727"
+green = "#44FFB1"
+yellow = "#FFE073"
+blue = "#A277FF"
+magenta = "#a277ff"
+cyan = "#24EAF7"
+white = "#24EAF7"

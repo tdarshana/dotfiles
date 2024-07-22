@@ -1,0 +1,33 @@
+import = ["~/.dotfiles/alacritty/my-themes/coolnight_dimmed.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+
+opacity = 0.85
+blur = true
+
+option_as_alt = "Both"
+
+[font]
+normal = { family = "BlexMono Nerd Font Mono", style = "Regular" }
+bold = { family = "BlexMono Nerd Font Mono", style = "Text" }
+italic = { family = "BlexMono Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "BlexMono Nerd Font Mono", style = "Text Italic" }
+builtin_box_drawing = true
+size = 14.5
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+vi_mode_style = { shape = "Block", blinking = "Always" }
+blink_interval = 500
+blink_timeout = 30
+unfocused_hollow = true
+
+[terminal]
+osc52 = "CopyPaste"

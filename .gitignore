@@ -1,0 +1,85 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore macOS system files
+.AppleDouble
+.LSOverride
+__MACOSX
+
+# Icon files
+Icon
+.icon
+
+# Ignore local shell history and configuration files
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.zsh_history
+.zshrc
+.config/fish/fish_history
+.config/fish/fishd.*
+
+# Ignore Vim/Neovim swap files
+*.swp
+*.swo
+*.swx
+*.un~
+Session.vim
+.netrwhist
+
+# Ignore JetBrains IDEs config and system files
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea/*
+
+# Ignore other IDE and editor configurations
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore compiled files
+*.o
+*.pyc
+*.pyo
+*.pyd
+*.class
+*.min.js
+*.map
+
+# Ignore logs
+*.log
+logs/
+*.out
+
+# Ignore node_modules and vendor directories
+node_modules/
+vendor/
+
+# Ignore coverage files
+coverage/
+
+# Ignore project-specific settings
+.settings/
+.env
+
+# Ignore Python virtual environments
+.venv/
+env/
+ENV/
+
+# Ignore custom settings and credentials
+custom_settings/
+credentials/
+
+
