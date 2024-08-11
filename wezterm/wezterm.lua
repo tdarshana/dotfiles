@@ -8,8 +8,8 @@ return {
 
 	-- Set window padding
 	window_padding = {
-		left = "1cell",
-		right = "1cell",
+		left = "2cell",
+		right = "2cell",
 		top = "0.5cell",
 		bottom = "0.5cell",
 	},
