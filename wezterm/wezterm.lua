@@ -54,4 +54,11 @@ return {
 	--},
 
 	-- Keybindings
+	--
+	-- Mouse Bindings
+	-- Disabled Mouse
+	disable_default_mouse_bindings = true,
+	pane_focus_follows_mouse = false,
+	hide_mouse_cursor_when_typing = true,
+	mouse_wheel_scrolls_tabs = true,
 }
