@@ -4,14 +4,14 @@ local wezterm = require("wezterm")
 return {
 	-- Set font and font size
 	font = wezterm.font("Zed Mono Extended"),
-	font_size = 15.0,
+	font_size = 16.0,
 
 	-- Set window padding
 	window_padding = {
 		left = "1cell",
 		right = "1cell",
-		top = "1.5cell",
-		bottom = "0.2cell",
+		top = "0.5cell",
+		bottom = "0.5cell",
 	},
 	window_frame = {
 		border_left_width = "1px",
@@ -35,22 +35,23 @@ return {
 	default_prog = { "/opt/homebrew/bin/fish", "-l" },
 
 	-- Enable or disable the tab bar
-	enable_tab_bar = true,
-	tab_bar_at_bottom = true,
+	enable_tab_bar = false,
+	tab_bar_at_bottom = false,
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
 	tab_max_width = 20,
 
 	-- Set window decorations
-	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
+	-- window_decorations = "INTEGRATED_BUTTONS|RESIZE",
+	window_decorations = "RESIZE|MACOS_FORCE_ENABLE_SHADOW",
 
 	-- Theme
 	color_scheme = "Tokyo Night",
-	window_background_opacity = 0.90,
+	window_background_opacity = 0.95,
 	macos_window_background_blur = 30,
-	colors = {
-		background = "#051529",
-	},
+	--colors = {
+	--	background = "#051529",
+	--},
 
 	-- Keybindings
 }
