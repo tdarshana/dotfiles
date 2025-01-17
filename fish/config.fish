@@ -76,3 +76,6 @@ eval (rbenv init -|source)
 set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/openssl@1.1/lib/pkgconfig:/opt/homebrew/opt/readline/lib/pkgconfig"
 set -gx LDFLAGS (pkg-config --libs openssl readline)
 set -gx CPPFLAGS (pkg-config --cflags openssl readline)
+
+# Set Man Pager to nvim
+export MANPAGER='nvim +Man!'
