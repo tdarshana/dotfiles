@@ -1,0 +1,12 @@
+# Ignore compiled bytecode files
+*.pyc
+
+# Ignore swap files
+*.swp
+
+# Ignore .DS_Store files (macOS)
+.DS_Store
+
+# Ignore fish_history file
+fish_history
+
