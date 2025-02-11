@@ -1,6 +1,8 @@
-# My DotFiles configs
+# My Dotfiles Configuration
 
-## Configs Restore for MacOS
+## Configuration Restore for MacOS
+
+**How to manage configurations manually**
 
 ```shell
 # Alacritty
@@ -31,3 +33,21 @@ ln -s ~/.dotfiles/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 ln -s ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
 
 ```
+
+**How to manage configurations with [GNU Stow](https://www.gnu.org/software/stow)**
+
+```shell
+cd ~/.dotfiles
+stow alacritty
+stow atuin
+stow bat
+stow fish
+stow kitty
+stow nvim
+stow scripts
+stow tmux
+stow wezterm
+stow zed
+```
+
+Each stow command creates symlinks from the files in the specified subdirectory to the corresponding locations in your home directory.

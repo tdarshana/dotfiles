@@ -1,0 +1,17 @@
+# Version control directories and files
+\.git
+\.gitignore
+\.gitmodules
+
+# macOS system files
+\.DS_Store
+
+# Backup and temporary files
+.+~          # Emacs backup files
+\#.*\#       # Emacs autosave files
+
+# Documentation files
+^/README.*
+^/LICENSE.*
+^/COPYING
+

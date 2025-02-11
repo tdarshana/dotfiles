@@ -77,5 +77,16 @@ set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/openssl@1.1/lib/pkgconfig:/opt/homebr
 set -gx LDFLAGS (pkg-config --libs openssl readline)
 set -gx CPPFLAGS (pkg-config --cflags openssl readline)
 
+set -gx PATH $HOME/.flutter/fltter/bin $PATH
+
 # Set Man Pager to nvim
 export MANPAGER='nvim +Man!'
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/darshana/.lmstudio/bin
+
+# LLVM Configs
+set -gx LDFLAGS -L/opt/homebrew/opt/llvm/lib
+set -gx CPPFLAGS -I/opt/homebrew/opt/llvm/include
+
+set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/mysql@8.4/lib/pkgconfig"
