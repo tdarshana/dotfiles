@@ -81,3 +81,6 @@ ENV/
 # Ignore custom settings and credentials
 custom_settings/
 credentials/
+
+# Ignore fish variables files
+fish/.config/fish/fish_variables
