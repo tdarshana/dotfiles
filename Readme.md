@@ -37,7 +37,10 @@ ln -s ~/.dotfiles/zed/settings.json ~/.config/zed/settings.json
 **How to manage configurations with [GNU Stow](https://www.gnu.org/software/stow)**
 
 ```shell
+# Naigate to the directory
 cd ~/.dotfiles
+
+# Create links
 stow alacritty
 stow atuin
 stow bat
@@ -48,6 +51,7 @@ stow scripts
 stow tmux
 stow wezterm
 stow zed
+stow zellij
 ```
 
 Each stow command creates symlinks from the files in the specified subdirectory to the corresponding locations in your home directory.
