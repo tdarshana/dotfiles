@@ -11,6 +11,14 @@ if type -q exa
     alias ll "exa -l -g --icons"
     alias lla "ll -a"
 end
+
+
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias ltt="eza --tree --level=2 --icons --git --long -s=modified -h --total-size --no-user --no-permissions"
+alias ltree="eza --tree --level=2  --icons --git"
+alias ls="eza --icons=always"
+
 #-------------------------------------------
 
 # Fish theme changes
@@ -26,14 +34,13 @@ set -U fish_pager_color_selected_background --background='028'
 alias vim=nvim
 alias vi=nvim
 
-# LS Replaces EZA
-alias ls="eza --icons=always"
+# Replaces ls with eza
 
 # Alias for Quitting Confirmation
 alias quit="~/.dotfiles/scripts/confirm_quit_alacritty.fish"
 
-# VSCodium to Code
-#alias code=codium
+# Bind Ctrl + g to Toggle Vim mode
+bind \cg toggle_vi_mode
 
 # Generated for envman. Do not edit.
 test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.fish"
@@ -61,9 +68,6 @@ source ~/.config/fish/java_aliases.fish
 # alias set - as nvim root
 alias nvmc='cd ~/.config/nvim'
 
-# zioxide
-zoxide init fish | source
-
 # Kitty toggle transperancy
 function tkit
     /Users/darshana/.config/kitty/toggle_transperancy.fish
@@ -90,3 +94,9 @@ set -gx LDFLAGS -L/opt/homebrew/opt/llvm/lib
 set -gx CPPFLAGS -I/opt/homebrew/opt/llvm/include
 
 set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/mysql@8.4/lib/pkgconfig"
+
+# Set Startship Command Line
+starship init fish | source
+
+# Set zioxide
+zoxide init --cmd z fish | source
