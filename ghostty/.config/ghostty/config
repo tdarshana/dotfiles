@@ -7,13 +7,14 @@ window-save-state = always
 window-new-tab-position = end
 window-padding-x = 12
 window-padding-balance = true
-background-opacity = 0.90
-background-blur-radius = 30
+background-opacity = 0.80
+background-blur-radius = 35
+background = #001e3a
 
 # Select a theme - run `ghostty +list-themes`
-theme = light:one-dark, dark:one-dark
+theme = light:one-dark, dark:tokyonight_night
 
 
 # General Configs
-font-size = 16
-font-family = JetBrains Mono
+font-size = 17
+font-family = Zed Mono Extended

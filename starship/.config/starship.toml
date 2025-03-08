@@ -45,7 +45,7 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 style = 'bold fg:dark_blue'
 format = '[$path ]($style)'
 truncation_length = 2
-truncation_symbol = '…/'
+truncation_symbol = '..'
 truncate_to_repo = false
 
 [directory.substitutions]
@@ -92,6 +92,7 @@ tag_symbol = ' '
 added_style = 'bold blue'
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 disabled = false
+only_nonzero_diffs = true
 
 [fill]
 symbol = ' '
