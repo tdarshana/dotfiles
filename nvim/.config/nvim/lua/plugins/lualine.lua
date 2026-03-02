@@ -1,0 +1,22 @@
+
+return {
+  'nvim-lualine/lualine.nvim',
+  dependencies = {
+    'nvim-tree/nvim-web-devicons'
+  },
+  config = function()
+    require('lualine').setup({
+      options = {
+        theme = 'auto'
+      },
+      sections = {
+        lualine_x = {
+          { '%S', separator = '' }, -- show current key sequence / command
+          'encoding',
+          'fileformat',
+          'filetype',
+        },
+      },
+    })
+  end
+}

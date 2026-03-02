@@ -1,9 +1,10 @@
+-- NVim Theme & Colorscheme
 return {
   "catppuccin/nvim",
-  name = "catppuccin",
+  enabled = true,
+  name= "catppuccin",
   priority = 1000,
-  ---@class CatppuccinOptions
-  opts = {
-    transparent_background = true,
-  },
+  config = function()
+    vim.cmd.colorscheme "catppuccin-frappe"
+  end
 }
