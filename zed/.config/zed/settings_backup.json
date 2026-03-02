@@ -7,16 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "agent_buffer_font_size": 16.0,
-  "agent_ui_font_size": 16.0,
-  "agent_servers": {
-    "opencode": {
-      "type": "registry"
-    }
-  },
   "edit_predictions": {
     "provider": "zed",
-    "mode": "eager",
+    "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
@@ -24,7 +17,7 @@
     "enabled_in_text_threads": false
   },
   "vim_mode": true,
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "JetBrains New UI Icons (Dark)",
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "write",
@@ -33,18 +26,21 @@
       "model": "gpt-4.1"
     },
   },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "autosave": "off",
   "theme": {
     "mode": "system",
     "light": "One Dark Pro",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Github Dark Dimmed"
   },
   "telemetry": {
     "metrics": true
   },
-  "ui_font_size": 16.0,
+  "ui_font_size": 15,
   "buffer_font_size": 15,
-  "buffer_font_family": "Zed Mono",
+  "buffer_font_family": "Monaspace Neon",
   "confirm_quit": true,
   "git_status": true,
   "git": {

@@ -28,6 +28,7 @@ $character"""
 # Inserts a blank line between shell prompts
 add_newline = true
 palette = 'onedark'
+command_timeout = 1000
 
 [os]
 format = '[$symbol ]($style)'

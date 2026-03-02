@@ -100,3 +100,12 @@ starship init fish | source
 
 # Set zioxide
 zoxide init --cmd z fish | source
+
+# Added by Windsurf
+fish_add_path /Users/darshana/.codeium/windsurf/bin
+
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+
+
+# Added by Antigravity
+fish_add_path /Users/darshana/.antigravity/antigravity/bin
